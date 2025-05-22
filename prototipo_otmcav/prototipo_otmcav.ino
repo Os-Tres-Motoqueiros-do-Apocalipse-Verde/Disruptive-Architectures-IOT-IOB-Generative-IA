@@ -2,8 +2,8 @@
 #include <WebServer.h>
 
 // Configurações do ponto de acesso
-const char* ssid = "Socorrooo";
-const char* password = "biscoito";
+const char* ssid = "Os tres Cavaleiros do Apocalipse Verde";
+const char* password = "maldita-mottu";
 
 WebServer server(80);
 
@@ -65,7 +65,6 @@ void setup() {
   Serial.begin(115200);
 
   WiFi.softAP(ssid, password);
-  Serial.println("TESEEEEEE");
   Serial.print("AP iniciado. IP: ");
   Serial.println(WiFi.softAPIP());
 
